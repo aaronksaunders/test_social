@@ -378,7 +378,7 @@ var OAuthAdapter = function(pConsumerSecret, pConsumerKey, pSignatureMethod) {
 		tokenSecret : ""
 	}, window = null, view = null, webView = null, loadingView = null, loadingContainer = null, receivePinCallback = null, accessTokenStore = {};
 	this.sendTwitterImage = function(options) {
-		var pUrl = "http://upload.twitter.com/1/statuses/update_with_media.json";
+		var pUrl = "https://api.twitter.com/1.1/statuses/update_with_media.json";
 		var pTitle = options.title;
 		var pSuccessMessage = options.onSuccess, pErrorMessage = options.onError;
 		if (accessToken == null || accessTokenSecret == null) {
