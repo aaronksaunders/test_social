@@ -18,9 +18,9 @@ var win = Ti.UI.createWindow({
 	backgroundColor : '#fff'
 });
 var shareButton = Ti.UI.createButton({
-	width : 90,
-	bottom : 10,
-	height : 30,
+	width : '200dp',
+	bottom : '10dp',
+	height : '43dp',
 	title : 'Tweet "Hello, World!"'
 });
 win.add(shareButton);
