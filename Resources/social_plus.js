@@ -14,7 +14,7 @@
  *     var social = require('alloy/social').create({
  *         consumerSecret: 'consumer-secret',
  *         consumerKey: 'consumer-key'
- *     });
+ *     });_
  *
  * ## Login and Authorization
  *
@@ -502,8 +502,8 @@ var OAuthAdapter = function(pConsumerSecret, pConsumerKey, pSignatureMethod) {
     }
   }, firstLoad = !0, loading = !1, estimates = JSON.parse(Ti.App.Properties.getString("Social-LoadingEstimates", "{}")), estimateID, startTime, intervalID = 0;
   this.showLoadingUI = function() {
-    var animation = require('alloy/animation');
-    var isIOS7 = OS_IOS && parseInt(Ti.Platform.version, 10) > 6 ? true : false
+    var animation = require('animation');
+    var isIOS7 = !Ti.Android && parseInt(Ti.Platform.version, 10) > 6 ? true : false
     window = Ti.UI.createWindow({
       backgroundColor : "transparent",
       zIndex : 1e3,

@@ -1,8 +1,8 @@
-#appname: test_social
-#publisher: aaronksaunders
-#url: http://www.clearlyinnovative.com
-#image: appicon.png
-#appid: ci.test.social
-#desc: undefined
-#type: ipad
-#guid: 89917cb1-f352-4c89-9d49-5dad22bcf556
+#appname:test_social
+#publisher:aaronksaunders
+#url:http://www.clearlyinnovative.com
+#image:appicon.png
+#appid:ci.test.social
+#desc:not specified
+#type:ipad
+#guid:89917cb1-f352-4c89-9d49-5dad22bcf556

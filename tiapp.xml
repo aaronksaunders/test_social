@@ -6,24 +6,15 @@
     <property name="acs-oauth-secret-development" type="string">ML8hxHD6m5dR8KMdXFFk1UKDCYtFnWdo</property>
     <property name="acs-oauth-key-development" type="string">04ASl9nRsyw7HvoTeWgUjdnpziY2xP3N</property>
     <property name="acs-api-key-development" type="string">lHMJHIBC7VzgQeeN98pp7GdJDeiwIz0L</property>
-    <property name="twitter.consumerKey">consumerKey</property>
-    <property name="twitter.consumerSecret">consumerSecret</property> 
-       
-    <deployment-targets>
-        <target device="mobileweb">true</target>
-        <target device="iphone">true</target>
-        <target device="ipad">true</target>
-        <target device="android">true</target>
-        <target device="blackberry">false</target>
-    </deployment-targets>
-    <sdk-version>2.1.2.GA</sdk-version>
+    <property name="twitter.consumerKey"></property>
+    <property name="twitter.consumerSecret"></property>
     <id>ci.test.social</id>
     <name>test_social</name>
     <version>1.0</version>
     <publisher>aaronksaunders</publisher>
     <url>http://www.clearlyinnovative.com</url>
     <description>not specified</description>
-    <copyright>2012 by aaronksaunders</copyright>
+    <copyright>2014 by aaronksaunders</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
@@ -46,13 +37,13 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-    	<manifest android:installLocation="preferExternal">
-    	    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+        <manifest android:installLocation="preferExternal">
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
             <uses-permission android:name="android.permission.INTERNET"/>
-           </manifest>
+        </manifest>
     </android>
     <mobileweb>
         <precache/>
@@ -63,6 +54,15 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="commonjs" version="2.3.0">ti.cloud</module>
+        <module platform="commonjs">ti.cloud</module>
     </modules>
+    <deployment-targets>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.2.3.GA</sdk-version>
 </ti:app>
